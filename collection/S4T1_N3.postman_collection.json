@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "89e045e9-e952-48b8-9447-e06de6fc4858",
+		"name": "S4T1_N3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29560528"
+	},
+	"item": [
+		{
+			"name": "Get Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Server}}:{{Port}}/HelloWorld?name=Pedro",
+					"host": [
+						"{{Server}}"
+					],
+					"port": "{{Port}}",
+					"path": [
+						"HelloWorld"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Pedro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Name 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Server}}:{{Port}}/HelloWorld/Pedro"
+			},
+			"response": []
+		}
+	]
+}
